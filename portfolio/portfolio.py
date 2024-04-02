@@ -1,10 +1,10 @@
 import streamlit as st
 
 def main():
-    st.title("My Portfolio")
+    st.title("LASITH DISSANAYAKE")
 
     # About section
-    st.header("About Me")
+    st.header("ABOUT ME")
     #st.image("/portfolio/images/pixelcut-export.png", use_column_width=True)
     st.write("""
     Hi there! I'm Lasith, a passionate programmer and technology enthusiast. 
@@ -12,7 +12,7 @@ def main():
     """)
 
     # Interests section
-    st.header("Interests")
+    st.header("INTERESTS")
     st.write("""
     Some of my interests include:
     - Machine Learning and Artificial Intelligence
@@ -22,7 +22,7 @@ def main():
     """)
 
     # Projects section
-    st.header("My Projects")
+    st.header("PROJECTS")
     st.write("""
     Here are a few projects I've worked on recently:
 
@@ -38,9 +38,9 @@ def main():
     """)
 
     # Contact section
-    st.header("Contact Me")
+    st.header("CONTACT")
     st.write("""
-    Feel free to reach out to me via email at [example@example.com](mailto:example@example.com) or connect with me on [LinkedIn](#).
+    Feel free to reach out to me via email at [lasithdissanayake.official@gmail.com](mailto:lasithdissanayake.official@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/lasith-dissanayake-430853192/).
     """)
 
     # Footer
@@ -50,9 +50,9 @@ def main():
     """)
 
     # Contact form
-    st.header("Contact Form")
+    name = st.text_input("Your Name")
     email = st.text_input("Your Email")
-    message = st.text_area("Your Message")
+    message = st.text_area("Your Message", height=200)
     if st.button("Send"):
         # Code to send email goes here
         st.success("Message sent successfully!")
